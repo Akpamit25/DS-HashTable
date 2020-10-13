@@ -9,7 +9,7 @@ public class MyHashMap<K, V> {
 
 	public V get(K key) {
 		MyMapNode<K, V> myMapNode = (MyMapNode<K, V>) this.myLinkedList.searchNode(key);
-		if (myMapNode == null)
+		if (myMapNode == null)//
 			return null;
 		else
 			return myMapNode.getValue();
