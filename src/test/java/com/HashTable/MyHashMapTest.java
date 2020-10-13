@@ -5,9 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.Assert;
 import org.junit.Test;
 
-
 public class MyHashMapTest {
-	
+
 	@Test
 	public void givenASentenceWhenWordsAreAddedShouldReturnWordFrequency() {
 		String sentence = "To be or not to be";
@@ -25,9 +24,11 @@ public class MyHashMapTest {
 		}
 
 		int frequency = myHashMap.get("to");
+		System.out.println(myHashMap);
 		Assert.assertEquals(2, frequency);
 
 	}
+
 
 
 }
